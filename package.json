@@ -1,0 +1,13 @@
+{
+  "engines": {
+    "node": "12.x"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "puppeteer": "^10.4.0"
+  },
+  "scripts": {
+    "start": "node -r esm src/index.js"
+  }
+}
