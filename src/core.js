@@ -47,7 +47,7 @@ export const storeTTItem = async (page, item) => {
     setTimeout(resolve, 1500)
   })
 
-  console.log('select knack shops')
+  console.log('select client')
   await page.waitForSelector('#ctl00_ContentPlaceHolder_idProyectoDropDownList')
   await page.select('#ctl00_ContentPlaceHolder_idProyectoDropDownList', '1034')
   await new Promise(function (resolve) {
@@ -79,7 +79,7 @@ export const storeTTItem = async (page, item) => {
   await page.waitForSelector('#ctl00_ContentPlaceHolder_CommentsTextBox')
   await page.type('#ctl00_ContentPlaceHolder_CommentsTextBox', item.description)
 
-  console.log('select michel')
+  console.log('select focal point')
   await page.waitForSelector('#ctl00_ContentPlaceHolder_idFocalPointClientDropDownList')
   await page.select('#ctl00_ContentPlaceHolder_idFocalPointClientDropDownList', '13702')
   await new Promise(function (resolve) {
