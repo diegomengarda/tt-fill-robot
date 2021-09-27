@@ -49,7 +49,7 @@ export const storeTTItem = async (page, item) => {
 
   console.log('select client')
   await page.waitForSelector('#ctl00_ContentPlaceHolder_idProyectoDropDownList')
-  await page.select('#ctl00_ContentPlaceHolder_idProyectoDropDownList', '1034')
+  await page.select('#ctl00_ContentPlaceHolder_idProyectoDropDownList', process.env.PROJECT_ID)
   await new Promise(function (resolve) {
     setTimeout(resolve, 1500)
   })
@@ -81,7 +81,7 @@ export const storeTTItem = async (page, item) => {
 
   console.log('select focal point')
   await page.waitForSelector('#ctl00_ContentPlaceHolder_idFocalPointClientDropDownList')
-  await page.select('#ctl00_ContentPlaceHolder_idFocalPointClientDropDownList', '13702')
+  await page.select('#ctl00_ContentPlaceHolder_idFocalPointClientDropDownList', process.env.CLIENT_FOCAL_POINT_ID)
   await new Promise(function (resolve) {
     setTimeout(resolve, 1500)
   })
