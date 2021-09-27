@@ -18,30 +18,33 @@ import {setup, storeTTItem} from "./core"
     const {browser, page} = await setup()
 
     const tt = [
+      /*
       {
-        date: '29/08/2021',
+        date: '27/09/2021',
         category: category.MEETING_CLIENT,
         task_description: taskDescription.DAILY_MEETING,
         hours: '0.5',
         description: '',
       },
       {
-        date: '29/08/2021',
+        date: '27/09/2021',
         category: category.MEETING_CLIENT,
         task_description: taskDescription.DAILY_MEETING,
         hours: '0.5',
-        description: 'Tech meeting with Steve',
+        description: 'Tech meeting',
       },
       {
-        date: '29/08/2021',
+        date: '27/09/2021',
         category: category.DEVELOPMENT,
         task_description: taskDescription.FEATURE_DEVELOPMENT,
         hours: '1',
         description: 'working in task wt-555',
       }
+       */
     ]
 
     for (let i = 0; i < tt.length; i++) {
+      console.log(`Task ${i+1}`)
       await storeTTItem(page, tt[i])
     }
 
