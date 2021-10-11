@@ -1,4 +1,4 @@
-### Easy way to fill your time tracker :)
+### NodeJS app to easy to fill your tasks in time tracker :)
 
  - copy .env.example .env
  - Update login and password in .env file
