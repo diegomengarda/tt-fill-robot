@@ -2,6 +2,7 @@
 
  - copy .env.example .env
  - Update login and password in .env file
+ - Edit the src/categories.js with the correct information about your project
+ - Edit the src/tasks.js file with your tasks
  - yarn or npm install
- - Add to tt array in src/index.js a list of your tasks
- - yarn start or npm run start
+ - Run with: yarn start or npm run start
