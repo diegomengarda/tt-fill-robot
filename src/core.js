@@ -2,7 +2,7 @@ require('dotenv').config()
 import puppeteer from "puppeteer"
 
 export const setup = async () => {
-  const browser = await puppeteer.launch({headless: process.env.PUPETEER_HEADLESS})
+  const browser = await puppeteer.launch({headless: process.env.PUPETEER_HEADLESS === 'true'})
   const page = await browser.newPage()
   await page.setDefaultNavigationTimeout(0)
   await page.goto('https://timetracker.bairesdev.com/Default.aspx')
